@@ -1,2 +1,2 @@
 # skyengine
-A flight booking site
+A flight search engine
