@@ -1,0 +1,202 @@
+head {
+}
+
+.top {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: black;
+    height: 110px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.top a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.logo{
+    cursor: pointer;
+    padding: 20px;
+    width: 20%;
+    float: left;
+}
+
+em {
+    font-family: sans-serif;
+    color: cornsilk;
+    font-size: 30px;
+}
+
+.tab {
+    width: 100%;
+    height: 70px;
+    margin-left: 20%;
+    padding-top: 50px;
+}
+
+.tab button {
+    	background-color: darkslategray;
+    	cursor: pointer;
+    	transition: 0.3s;
+    	font-size: 18px;
+        padding: 10px;
+        color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    	background-color: #C0C0C0;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    	background-color: #ccc;
+}
+
+.sign {
+    float: right;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+p1 {
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.barDiv {
+    background-color: powderblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    background-color: white;*/
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 170px;
+}
+
+.roundButton {
+    cursor: pointer;
+    background-color: #AAAAAA;
+    padding: 6px;
+    display: inline-block;
+    margin: 0px 5px 10px 0px;
+    border-radius: 50%;
+    border: 6px solid green;
+    height: 25px;
+    width: 25px;
+}
+
+.searchDiv {
+
+}
+
+.col {
+    float: left;
+    margin-right: 8px;
+}
+
+.searchButton {
+    cursor: pointer;
+    /* float: right; */
+    background-color: green;
+    color: white;
+    padding: 9px;
+    font-size: 15px;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    margin-right: 140px;
+    margin-top: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.searchResults {
+  margin: 15px 100px 50px 100px;
+  background-color: #A3E4BB;
+  min-height: 400px;
+}
+
+.selectFlight {
+  background-color: #FFFF7A;
+  height: 15%;
+  width: 80%;
+  padding: 1%;
+  margin: 5%;
+  display: inline-block;
+}
+
+p2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin: 3%;
+}
+
+p3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 3%;
+}
+
+.departTime {
+  width: 20%;
+  float: left;
+  padding-top: 1%;
+}
+
+.arrow {
+  width: 20%;
+  float: left;
+  padding-top: 1%;
+}
+
+.arrowImg {
+  width:80px;
+  height:60px;
+}
+
+.arrivalTime {
+  width: 20%;
+  float: left;
+  padding-top: 1%;
+}
+
+.flightPrice {
+  width: 40%;
+  float: left;
+  padding-top: 2%;
+}
+
+.selectButton {
+    cursor: pointer;
+    background-color: #CC3333;
+    font-size: 200%;
+    color: black;
+    height: 50%;
+    width: 40%;
+
+}
+
+.bottom {
+    background-color: black;
+    height: 25%;
+    width: 100%;
+}

@@ -1,0 +1,209 @@
+head {
+}
+
+.top {
+    background-color: black;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.top a {
+    float: left;
+    color: #f2f2f2;
+    padding-left: 2.5%;
+}
+
+.logo{
+    cursor: pointer;
+    padding: 2%;
+    width: 20%;
+    float: left;
+}
+
+.logopng {
+  width:30%;
+  height:30%;
+}
+
+em {
+    font-family: sans-serif;
+    color: cornsilk;
+    font-size: 175%;
+}
+
+.tab {
+    padding-top: 4%;
+}
+
+.tab button {
+    	background-color: darkslategray;
+    	cursor: pointer;
+    	transition: 0.3s;
+    	font-size: 150%;
+      padding: 4px;
+      color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    	background-color: #C0C0C0;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    	background-color: #ccc;
+}
+
+.sign {
+}
+
+body {
+    font-family: sans-serif;
+}
+
+p1 {
+    color: white;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+.barDiv {
+    background-image: url("images/airplane.png");
+    background-color: #cccccc;
+    background-size: 100%;
+    padding-top: 2%;
+    padding-left: 5%;
+    margin-top: 11%;
+}
+
+.roundButton {
+    cursor: pointer;
+    background-color: #AAAAAA;
+    padding: 0.7%;
+    margin: 0.5% 0.5% 0% 0.5%;
+    border-radius: 50%;
+    border: 6px solid green;
+}
+
+.searchDiv {
+
+}
+
+.col {
+  height: 35px;
+}
+
+.col1 {
+    font-size: 100%;
+    width: 25%;
+    padding: 0.5%;
+}
+.col2 {
+  font-size: 100%;
+  width: 25%;
+  padding: 0.5%;
+}
+.col3 {
+  font-size: 100%;
+  width: 25%;
+  padding: 0.5%;
+}
+
+.col4 {
+  font-size: 100%;
+  width: 25%;
+  padding: 0.5%;
+}
+.col5 {
+  font-size: 100%;
+  width: 25%;
+  padding: 0.5%;
+  display: table;
+}
+
+.searchButton {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 150%;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+h2 {
+    color: white;
+    font-size: 200%;
+    font-family: sans-serif;
+    background-color: black;
+    text-align: center;
+    padding: 3%;
+}
+
+.pictures {
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    margin: 0% 5% 2% 5%;
+}
+
+.image {
+    width: 100%;
+    cursor: pointer;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.column:hover .image {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    position: relative;
+    opacity: 0;
+    text-align: center;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 150%;
+  padding: 2%;
+}
+
+
+
+
+.aboutDiv {
+}
+
+.aboutContent {
+    background-color: darkkhaki;
+    margin: 2% 10% 2% 10%;
+    padding: 2% 15% 2% 15%;
+}
+
+p3 {
+    color: black;
+    font-size: 130%;
+    font-family: sans-serif;
+}
+
+.bottom {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+}

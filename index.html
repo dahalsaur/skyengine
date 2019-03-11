@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to SkyEngine </title>
+<head id="top"></head>
+<body>
+<div class = "top">
+    <div class = "logo">
+        <img src="images/engine_logo.png" alt="logo" align="middle" class = "logopng">
+        <b><em> SkyEngine</em></b>
+    </div>
+    <div class = "tab">
+        <a href="#top"><button>Home</button></a>
+        <a href="#recommend"><button>Recommendations</button></a>
+        <a href="#about"><button>About Us</button></a>
+        <a href="#contact"><button>Contact Us</button></a>
+        <a href="#impressum"><button>Impressum</button></a>
+        <a href="#sign" class="sign"><button>Log In</button></a>
+    </div>
+</div>
+<div class="barDiv">
+    <button class="button roundButton"></button>
+    <p1>Return</p1>
+    <button class="button roundButton"></button>
+    <p1>One Way</p1>
+    <form action = "search_results.php" type = "get">
+    <div class="searchDiv">
+        <div class = "col1">
+            <p1>From</p1><br>
+            <input class = "col" type="text" name="airport" required>
+        </div>
+        <div class = "col2">
+            <p1>To</p1><br>
+            <input class = "col" type="text" name="destination" required>
+        </div>
+        <div class = "col3">
+            <p1>Depart</p1><br>
+            <input class = "col" type="date" name="flightdate" required>
+        </div>
+        <div class = "col4">
+            <p1>Return</p1><br>
+            <input class = "col" type="date" name="return" disabled required>
+        </div>
+        <div class = "col5">
+            <p1>Number of Passengers</p1><br>
+            <input class = "col" type="number"  min="1" max="5" value="1" name="passengers" required>
+            <br><br>
+            <button class="button searchButton" type="submit">Search Flights</button>
+        </div>
+    </div>
+</form>
+</div>
+
+<div class = "recommend" id="recommend">
+    <h2>Travel Recommendations </h2>
+    <div class="pictures">
+        <div class="row">
+            <div class="column">
+                <img src="images/amsterdam.jpg" alt="Amsterdam" class="image">
+                <div class="middle">
+                    <div class="text">Amsterdam</div>
+                </div>
+            </div>
+            <div class="column">
+                <img src="images/frankfurt.jpg" alt="Frankfurt" class="image">
+                <div class="middle">
+                    <div class="text">Frankfurt</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images/india.jpg" alt="India" class="image">
+                <div class="middle">
+                    <div class="text">India</div>
+                </div>
+            </div>
+            <div class="column">
+                <img src="images/hamburg.jpg" alt="Hamburg" class="image">
+                <div class="middle">
+                    <div class="text">Hamburg</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images/london.jpg" alt="London" class="image">
+                <div class="middle">
+                    <div class="text">London</div>
+                </div>
+            </div>
+            <div class="column">
+                <img src="images/paris.jpg" alt="Paris" class="image">
+                <div class="middle">
+                    <div class="text">Paris</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="aboutDiv" id="about">
+    <h2>About us </h2>
+    <div class ="aboutContent">
+      <img src="images/engine_logo.png" alt="logo" align="middle" class = "logopng">
+      <b><em> SkyEngine</em></b>
+        <p3>
+               is the group project for the course Databases and Web Services. We are designing online ticketing used by airlines by explaining the procedure and presenting a simple application. <br>
+            <br>
+            The main focus of our project is to develop a working application. With the use of different applications and programs, a simple application identical to the models used by airlines companies today is developed. Research in the sources such as e-books, articles, documentation and tutorials have been used as references for the design and development of our project. <br>
+        </p3>
+    </div>
+</div>
+<div class="aboutDiv" id="contact">
+    <h2>Contact us </h2>
+    <div class ="aboutContent">
+        <p3>
+                SkyEngine<br>
+                College Ring 4<br>
+                28759 Bremen<br>
+                Germany<br>
+                <br>
+                Phone number:<br>
+                +49 (0) 170 232 4755<br>
+                +49 (0) 171 947 5432<br>
+                <br>
+                Email:<br>
+                s.dahal at jacobs-university.de<br>
+                a.bhattarai at jacobs-university.de<br>
+        </p3>
+    </div>
+</div>
+<div class="aboutDiv" id="impressum">
+    <h2>Impressum</h2>
+    <div class ="aboutContent">
+        <p3>
+            For each external link existing on this website, we initially have checked that the target page
+            does not contain contents which is illegal wrt. German jurisdiction. However, as we have no in-
+            fluence on such contents, this may change without our notice. Therefore we deny any responsib-
+            ility for the websites referenced through our external links from here.<br>
+            <br>
+            This website is student lab work and does not necessarily reflect Jacobs University Bremen opin-
+            ions. Jacobs University Bremen does not endorse this site, nor is it checked by Jacobs University
+            Bremen regularly, nor is it part of the official Jacobs University Bremen web presence.<br>
+        </p3>
+    </div>
+</div>
+<div class="bottom">
+    <h2>Partners & Sponsors</h2>
+
+</div>
+</body>
+</html>
