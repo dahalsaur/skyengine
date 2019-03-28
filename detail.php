@@ -1,14 +1,15 @@
 <?php
 
+
 $id = $_GET['cid'];
 
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
+  // Confidential!! Login information to connect to the mySQL database
+$servername = "localhost";
+$username = "sdahal";
+$password = "catchmeifyoucan";
+$dbname = "skyengine";
 
 ?>
-
 <html>
 <link rel="stylesheet" href="detail_styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,10 +17,14 @@ $dbname = "";
 <head id="top"></head>
 <body>
 <div class = "top">
+
+      <!-- Logo and company name at the top right-->
     <div class = "logo">
         <img src="images/engine_logo.png" alt="logo" align="middle" style="width:80px;height:80px;">
         <b><em> SkyEngine</em></b>
     </div>
+
+      <!-- Jump to different sections(Home, Recommendations, About Us, Contact Us, ...) of the webpage-->
     <div class = "tab">
         <a href="index.html#top"><button>Home</button></a>
         <a href="index.html#recommend"><button>Recommendations</button></a>
@@ -28,6 +33,7 @@ $dbname = "";
         <a href="index.html#impressum"><button>Impressum</button></a>
         <a href="index.html#sign" class="sign"><button>Log In</button></a>
     </div>
+
 </div>
 <br><br>
 
@@ -116,6 +122,7 @@ while($row = mysqli_fetch_assoc($result)) {
 
 <h1> Book Your Ticket </h1>
 
+  <!--  Gets customer information and takes to the payment page   -->
 <form action = "payment.php" type = "get">
     <div class="searchDiv">
         <div class = "col1">

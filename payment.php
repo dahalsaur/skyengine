@@ -1,5 +1,6 @@
 <?php
 
+  // Store variables passed via query strings or URL parameters
 $id = $_GET['cid'];
 $fname = $_GET['firstname'];
 $lname = $_GET['lastname'];
@@ -9,11 +10,11 @@ $no = $_GET['phoneno'];
 $age = $_GET['age'];
 $nation = $_GET['nationality'];
 
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
-
+  // Confidential!! Login information to connect to the mySQL database
+$servername = "localhost";
+$username = "sdahal";
+$password = "catchmeifyoucan";
+$dbname = "skyengine";
 
 ?>
 
@@ -24,10 +25,14 @@ $dbname = "";
 <head id="top"></head>
 <body>
 <div class = "top">
+
+    <!-- Logo and company name at the top right-->
     <div class = "logo">
         <img src="images/engine_logo.png" alt="logo" align="middle" style="width:80px;height:80px;">
         <b><em> SkyEngine</em></b>
     </div>
+
+    <!-- Jump to different sections(Home, Recommendations, About Us, Contact Us, ...) of the webpage-->
     <div class = "tab">
         <a href="index.html#top"><button>Home</button></a>
         <a href="index.html#recommend"><button>Recommendations</button></a>
@@ -43,11 +48,13 @@ $dbname = "";
 
   // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
+
 // Check connection
 if (!$conn){
 	die("Connection failed: " . mysqli_connect_error());
 }
 
+  //Inserts passenger info into mySQL table named PASSENGER
 $sql = "INSERT INTO PASSENGER(FirstName,LastName,Address,Email,PhoneNo,Age,Nationality)
         VALUES('$fname','$lname','$addr','$email','$no','$age','$nation');";
 

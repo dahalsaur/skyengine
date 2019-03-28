@@ -1,17 +1,14 @@
 <?php
+
+    // Store variables passed via query strings to auto fill the form.
 $from = $_GET['airport'];
 $to = $_GET['destination'];
 $date = $_GET['flightdate'];
 $returndate = $_GET['return'];
 $passengers = $_GET['passengers'];
 
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
-
-
 ?>
+
 
 <html>
 <link rel="stylesheet" href="search_results_styles.css">
@@ -20,10 +17,14 @@ $dbname = "";
 <head id="top"></head>
 <body>
 <div class = "top">
+
+      <!-- Logo and company name at the top right-->
     <div class = "logo">
         <img src="images/engine_logo.png" alt="logo" align="middle" style="width:80px;height:80px;">
         <b><em> SkyEngine</em></b>
     </div>
+
+    <!-- Jump to different sections(Home, Recommendations, About Us, Contact Us, ...) of the webpage-->
     <div class = "tab">
         <a href="index.html#top"><button>Home</button></a>
         <a href="index.html#recommend"><button>Recommendations</button></a>
@@ -34,6 +35,7 @@ $dbname = "";
     </div>
 </div>
 
+  <!-- Search edit form -->
 <div class="barDiv">
     <button class="button roundButton"></button>
     <p1>Return</p1>
@@ -71,14 +73,17 @@ $dbname = "";
     </div>
 </div>
 <div class = "searchResults">
+
   <?php
   // Create connection
   $conn = mysqli_connect($servername, $username, $password, $dbname);
+
   // Check connection
   if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
   }
 
+    //find the best(time, price) flight based on input data
   $sql = "SELECT ROUTE.Airport, ROUTE.Destination, FARE.Fare, FLIGHT.FlightDate, FLIGHT.DepartureTime, FLIGHT.ArrivalTime, FLIGHT.FlightID
     FROM ROUTE
   	INNER JOIN FARE ON ROUTE.RouteId = FARE.Route
@@ -86,7 +91,9 @@ $dbname = "";
   	WHERE ROUTE.Airport = '$from' AND ROUTE.Destination = '$to' AND FLIGHT.FlightDate = '$date'
   	ORDER BY FLIGHT.DepartureTime";
   $result = mysqli_query($conn, $sql);
+
   if (mysqli_num_rows($result) > 0) {
+
       // output data of each row
       while($row = mysqli_fetch_assoc($result)) {
       	$id = $row["FlightID"];
